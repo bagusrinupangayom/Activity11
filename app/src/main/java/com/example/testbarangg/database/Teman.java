@@ -3,6 +3,7 @@ package com.example.testbarangg.database;
 import java.io.Serializable;
 
 public class Teman implements Serializable {
+    String kode;
     String nama;
     String telpon;
 
@@ -30,11 +31,19 @@ public class Teman implements Serializable {
         this.telpon = telpon;
     }
 
+    public String getKode() {
+        return kode;
+    }
+
+    public void setKode(String kode) {
+        this.kode = kode;
+    }
+
     @Override
     public String toString() {
         return "Teman{" +
-                "nama='" + nama + '\'' +
-                ", telpon='" + telpon + '\'' +
+                "telpon='" + telpon + '\'' +
+                ", nama='" + nama + '\'' +
                 '}';
     }
 }
